@@ -138,7 +138,7 @@ docker run -p 8000:8000 devops-end-to-end:local
 
   -Your DockerHub container image is automatically updated by GitHub Actions.
 
-    **(https://hub.docker.com/r/<USER_NAME>/devops-end-to-end)**
+    **(https://hub.docker.com/r/devined4spd/devops-end-to-end)**
 
   * API Response Example
  
