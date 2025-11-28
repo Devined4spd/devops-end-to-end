@@ -2,9 +2,11 @@ name: CI-CD Pipeline
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
   pull_request:
-    branches: ["main"]
+    branches:
+      - main
 
 jobs:
   build-test-push:
@@ -41,6 +43,3 @@ jobs:
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/devops-end-to-end:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/devops-end-to-end:${{ github.run_number }}
-
-
-
